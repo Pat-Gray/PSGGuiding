@@ -67,3 +67,7 @@ function displayImages2() {
   images[eindex - 1].style.display = "block";
   setTimeout(displayImages2, 5000);
 }
+
+// fqa javacript
+import "tiny-slider/dist/tiny-slider.css";
+import "tiny-slider";

@@ -309,3 +309,7 @@ ul {
     font-size: 0.4rem;
   }
 }
+
+[data-action="stop"] {
+  display: none;
+}
