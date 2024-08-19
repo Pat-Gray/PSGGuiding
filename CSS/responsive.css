@@ -1,0 +1,8 @@
+@media only screen and (max-width: 576x) {
+  header {
+    display: flex;
+  }
+  .logo {
+    display: none;
+  }
+}

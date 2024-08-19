@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+
 
     <link rel="stylesheet" href="/PSGGuiding/CSS/styles.css" />
     <title>PSG Guiding</title>
@@ -34,37 +38,45 @@
       <span onclick="openNav()" class="side-bar-icon">☰</span>
     </header>
 
+
     <article id="main">
-      <div class="slideshow-container">
-        <div class="slides">
-          <img
-            class="pet1"
-            src="/PSGGuiding/Guide Images/Pet1.jpg"
-            alt="Petrouchka ski touring in
-      Tasman Glacier"
-            style="width: 100%"
-          />
+
+      <!-- BOOTSTRAP CAROUSEL  -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
-
-        <div class="slides">
-          <img
-            class="pet 2"
-            src="/PSGGuiding/Guide Images/Guide Pet.jpg"
-            alt="Petrouchka guiding"
-            style="width: 100%"
-          />
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/PSGGuiding/Guide Images/Pet1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/PSGGuiding/Guide Images/Guide photo japan.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/PSGGuiding/Guide Images/Pet stetind.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/PSGGuiding/Guide Images/Pet Trogan.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/PSGGuiding/Guide Images/Pet-on-ridge.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <br />
-
-      <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-      </div>
-
+      
       <section class="intro">
         <h1 class="short-bio">
           IFMGA Mountain & Ski Guide based in Wanaka, New Zealand.<br />Working
@@ -89,76 +101,80 @@
         </p>
       </section>
 
-      <div class="products">
-        <h3 class="product">
+      <div class="products-container">
+        
+        <h3 class="product c">
           <strong>Mountaineering & Rock Climbing </strong>
         </h3>
-        <h3 class="product">
+        <h3 class="product s">
           <strong>Ski Touring & Ski-Mountaineering</strong>
         </h3>
-        <h3 class="product"><strong>Expeditions & Custom Trips</strong></h3>
-
+        <h3 class="product e"><strong>Expeditions & Custom Trips</strong></h3>
+<a class="climb-slideshow" href="/PSGGuiding/HTML/climbing.html">
         <div class="climb-slideshow">
-          <div class="climb fade">
+          <div class="climb fadein">
             <img
               src="/PSGGuiding/Climb Images/pat nazomi.JPG"
               alt="South Face Mt Naozmi New Zealand"
             />
           </div>
 
-          <div class="climb fade">
+          <div class="climb fadein">
             <img
               src="/PSGGuiding/Climb Images/pat malte brun.JPG"
               alt="climbing on west ridge of Malte Brun"
             />
           </div>
 
-          <div class="climb fade">
+          <div class="climb fadein">
             <img
               src="/PSGGuiding/Climb Images/East ridge Cook.jpg"
               alt="East Ridge of Mt Cook"
             />
           </div>
         </div>
+      </a>
+        <a class="ski-slideshow" href="/PSGGuiding/HTML/ski.html">
         <div class="ski-slideshow">
-          <div class="skiing fade">
+          <div class="skiing fadein">
             <img
               src="/PSGGuiding/Ski Images/Plateau Ski touring.jpg"
               alt="Plateau ski touring"
             />
           </div>
 
-          <div class="skiing fade">
+          <div class="skiing fadein">
             <img
               src="/PSGGuiding/Ski Images/petskiing.jpg"
               alt="Skiing deep powder on Yotei Japan"
             />
           </div>
 
-          <div class="skiing fade">
+          <div class="skiing fadein">
             <img
               src="/PSGGuiding/Ski Images/Mueller Skinning.jpg"
               alt="Skinning up the Mueller Glacier"
             />
           </div>
         </div>
-
+      </a>
+      <a class="expedition-slideshow" href="/PSGGuiding/HTML/expedition.html">
         <div class="expedition-slideshow">
-          <div class="expedition fade">
+          <div class="expedition fadein">
             <img src="/PSGGuiding/Climb Images/ridge climbing.jpg" />
           </div>
 
-          <div class="expedition fade">
+          <div class="expedition fadein">
             <img src="/PSGGuiding/Guide Images/Pet Trogan.jpg" alt="rock climbing" />
           </div>
         </div>
-
-        <p>
+</a>
+        <p id="climb-p">
           Guiding Mountain Ascents and Courses in the Southern Alps. Main
           Climbing season in New Zealand is from September to Febuary.Rock
           Climbing Guiding and instruction also available year round.
         </p>
-        <p>
+        <p id="ski-p">
           Ski Touring and Avalanche Courses based out of Wanaka. Guided Ski
           mountaineering in Spring. Get in touch if you have an objective for
           this season.
@@ -174,32 +190,251 @@
         </div>
       </div>
 
-      
-<section class="testimonials">
-  <h2 id="testimonal-header">Testimonals</h2>
-  <div class=testimonal1>
-    <p><i>"Feel very privileged to have spent 7 days in such a beautiful spot at and surrounding Caroline Hut. All aspects of the course from transport, accomodation, equipment and food were all to a very high standard. Pet was a fantastic guide with a high level of knowledge and professionalism. Would highly recommend"</i></p>
-    <p class="client">Jessica</p>
-    <p>Mountaineering course</p>
-  </div>
-  <div class=testimonal2>
-    <p><i>"Petrouchka was an excellent guide. She was clearly very competent and calm and managed the diversity and needs of the group gently and well. She remained calm and instilled confidence and group togetherness. She was a clear communicator and an outstanding leader and not thrown by one group member struggling with the trip."</i></p>
-    <p class="client">Elsa</p>
-    <p>Ball Pass Crossing</p>
-  </div>
-  <div class=testimonal2>
-    <p><i>"10/10. Pet was patient, methodical and had a wealth of experience to pass on!"</i></p>
-    <p class="client">Kevin</p>
-    <p>Backcountry Touring Course</p>
-  </div>
-  <div class=testimonal2>
-    <p><i>"The guide in particular was outstanding. I have previously had experience with 5 other ski-touring guides through other companies and I would describe them all as excellent however Petrouchka was in an outstanding league of her own!"</i></p>
-    <p class="client">Taylor</p>
-    <p></p>Backcountry Touring Course</p>
-  </div>
+ <!-- Testimonials bootstrap -->
+  
+<h2 id="testimonial-header">Testimonals</h2>
+  
+    
+<!-- lazily load the Swiper CSS file -->
+<link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<!-- lazily load the Swiper JS file -->
+<script defer="defer" src="https://unpkg.com/swiper@8/swiper-bundle.min.js" onload="initializeSwiperRANDOMID();"></script>
+
+<!-- lc-needs-hard-refresh -->
+
+<script>
+ function initializeSwiperRANDOMID(){
+ 	// Launch SwiperJS  
+	    const swiper = new Swiper(".mySwiper-RANDOMID", {
+					slidesPerView: "auto",
+					grabCursor: true,
+					spaceBetween: 30,
+					pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+					},
+		});
+		
+ }
+ </script>
+
+<style>
+
+	.swiper-slide {min-width:350px}
+	
+	/* only on sm to large devices */
+	@media (min-width: 768px) {
+		.swiper-slide {min-width:350px}
+	}
+
+</style>
+
+
+<div class="container py-6 overflow-hidden">
+	<div class="swiper mySwiper-RANDOMID">
+		<div class="swiper-wrapper mb-6 d-flex">
+			<div class="swiper-slide card col-12 col-sm">
+				<div class="card-body">
+					
+					<div class="lc-block mb-4">
+						<div editable="rich">
+
+							
+							<p class="lead"><i>"Pet was a fantastic guide with a high level of knowledge and professionalism. Would highly recommend."</i></p>
+              <h4 class="lead client">Jessica - <i>Mountaineering Course</i></h4>
+						</div>
+					</div>
+
+					<!-- /lc-block -->
+				</div>
+			</div>
+			<div class="swiper-slide card col-12 col-sm">
+				<div class="card-body">
+					<div class="lc-block mb-4">
+						<div editable="rich">
+							<p class="lead"><i>"Petrouchka was an excellent guide. She was clearly very competent and calm and managed the diversity and needs of the group gently and well. She remained calm and instilled confidence and group togetherness. She was a clear communicator and an outstanding leader and not thrown by one group member struggling with the trip."</i></p><h4 class="lead client">Elsa - <i>Ball Pass Crossing</i></h4>
+						</div>
+					</div>
+
+					
+						
+				<!-- /lc-block -->
+				</div>
+			</div>
+			<div class="swiper-slide card col-12 col-sm">
+				<div class="card-body">
+						
+
+					<div class="lc-block mb-4">
+						<div editable="rich">
+							<p class="lead"><i>"10/10. Pet was patient, methodical and had a wealth of experience to pass on!</i></p><h4 class="lead client">Kevin - <i>Backcountry Touring Course</i></h4>
+						</div>
+					</div>
+
+					
+					<!-- /lc-block -->
+				</div>
+			</div>
+			<div class="swiper-slide card col-12 col-sm">
+				<div class="card-body">				
+					<div class="lc-block mb-4">
+						<div editable="rich">
+
+
+							
+							<p class="lead"><i>"The guide in particular was outstanding. I have previously had experience with 5 other ski-touring guides through other companies and I would describe them all as excellent however Petrouchka was in an outstanding league of her own!"</i></p><h4 class="lead client">Taylor - <i>Backcountry Touring Course</i></h4>
+						</div>
+					</div>
+
+					<div class="lc-block">
+						
+					</div><!-- /lc-block -->
+				</div>
+			</div>
+			<div class="swiper-slide card col-12 col-sm">
+				<div class="card-body">
+					<div class="lc-block d-flex gap-1 py-3">
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+
+					<div class="lc-block mb-4">
+						<div editable="rich">
+
+
+							<h4>Great Tool. </h4>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quae facere, quia aspernatur consequuntur consectetur, nulla beatae laboriosam fugit id eius in.</p>
+						</div>
+					</div>
+
+					<div class="lc-block">
+						<img class="img-fluid" src="https://cdn.livecanvas.com/media/logos/ipsum/logoipsum-logo-1.svg" width="128" height="128" alt="Company logo">
+					</div><!-- /lc-block -->
+				</div>
+			</div>
+			<div class="swiper-slide card col-12 col-sm">
+				<div class="card-body">
+					<div class="lc-block d-flex gap-1 py-3">
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+
+					<div class="lc-block mb-4">
+						<div editable="rich">
+
+
+							<h4>Great Tool. </h4>
+							<p class="lead"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quae facere, quia aspernatur consequuntur consectetur, nulla beatae laboriosam fugit id eius in. Vitae suscipit nulla temporibus necessitatibus ut sequi eaque!</span></p>
+						</div>
+					</div>
+
+					<div class="lc-block">
+						<img class="img-fluid" src="https://cdn.livecanvas.com/media/logos/ipsum/logoipsum-logo-1.svg" width="128" height="128" alt="Company logo">
+					</div><!-- /lc-block -->
+				</div>
+			</div>
+			<div class="swiper-slide card col-12 col-sm">
+				<div class="card-body">
+					<div class="lc-block d-flex gap-1 py-3">
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+
+					<div class="lc-block mb-4">
+						<div editable="rich">
+
+
+							<h4>Great Tool. </h4>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+					</div>
+
+					<div class="lc-block">
+						<img class="img-fluid" src="https://cdn.livecanvas.com/media/logos/ipsum/logoipsum-logo-1.svg" width="128" height="128" alt="Company logo">
+					</div><!-- /lc-block -->
+				</div>
+			</div>
+			<div class="swiper-slide card col-12 col-sm">
+				<div class="card-body">
+					<div class="lc-block d-flex gap-1 py-3">
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-danger">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+
+					<div class="lc-block mb-4">
+						<div editable="rich">
+
+
+							<h4>Great Tool. </h4>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quae facere, quia aspernatur consequuntur consectetur, nulla beatae laboriosam fugit id eius in.</p>
+						</div>
+					</div>
+
+					<div class="lc-block">
+						<img class="img-fluid" src="https://cdn.livecanvas.com/media/logos/ipsum/logoipsum-logo-1.svg" width="128" height="128" alt="Company logo">
+					</div><!-- /lc-block -->
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+
 
 </div>
-</section>
+ 
 
     </article>
     <footer>
@@ -211,6 +446,8 @@
      <a href="/PSGGuiding/HTML/contact.html"><button class="footer" id="contact-btn" >Contact me today for your next adventure</button></a>
     </div>
     </footer>
+    <!-- BOOTSTRAP SCRIPT -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="/PSGGuiding/script.js" defer></script>
   </body>
 </html>

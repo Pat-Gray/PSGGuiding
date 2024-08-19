@@ -1,21 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 
-/* 
-- SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96/ 128
-
-- FONT WEIGHT:
-default: 1
-
-- lINE HEIGHTS:
-
- -FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16/ 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-COLORS:
-Primary: #0F4C75
-Tints: #3282B8, #BBE1FA, #1B262C
-*/
+/* COLORS:
+Primary: #0F4C75#3282B8, #BBE1FA, #1B262C */
 
 * {
   padding: 0;
@@ -30,6 +16,7 @@ body {
   line-height: 1;
   background-color: #bbe1fa;
   color: #0f4c75;
+  min-height: 100vh;
 }
 
 /* HEADER ITEMS */
@@ -52,6 +39,13 @@ header {
   text-align: center;
   font-weight: 600;
   padding-right: 5%;
+}
+
+.name h1 {
+  font-size: 300%;
+}
+.name h2 {
+  font-size: 200%;
 }
 
 .logo {
@@ -79,7 +73,7 @@ header {
 .sideNav a {
   padding: 0.5rem 0.5rem 0.5rem 32px;
   text-decoration: none;
-  font-size: ;
+
   color: #3282b8;
   display: block;
   transition: 0.3s;
@@ -109,50 +103,6 @@ span {
 
 /* MAIN SLIDESHOW */
 
-.slideshow-container {
-  display: border-box;
-  width: 100%;
-  position: relative;
-  padding: 0;
-}
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: auto;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 #id {
   transition: opacity 0.5s;
 }
@@ -177,7 +127,7 @@ span {
 }
 
 /*Products CSS */
-.products {
+.products-container {
   margin-top: 3.5rem;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -198,7 +148,7 @@ img {
 }
 
 .fade:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
 }
 ul {
   margin-left: 15px;
@@ -209,30 +159,22 @@ ul {
 }
 
 /* TESTIMONIALS */
-
-.testimonials {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  background-color: #0f4c75;
-  color: #bbe1fa;
-  line-height: 1.8;
-  justify-items: center;
-  align-items: start;
-  gap: 4%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
-  margin: 5%;
-  border-radius: 1rem;
-}
-
-#testimonal-header {
-  grid-column: 1/-1;
+#testimonial-header {
+  font-weight: 800;
+  font-size: 2rem;
   text-align: center;
 }
 
+.lead {
+  line-height: 1.5;
+  color: #bbe1fa;
+}
 .client {
-  font-weight: bold;
+  font-weight: 600;
+  color: #bbe1fa;
+}
+.swiper-slide {
+  background-color: #0f4c75;
 }
 /* FOOTER */
 .footer-container {
@@ -240,7 +182,6 @@ ul {
   align-items: center;
   width: 100%;
   padding: 0;
-
   max-height: 5rem;
   background-color: #0f4c75;
 }
@@ -273,4 +214,98 @@ ul {
 
 #contact-btn:hover {
   transform: scale(1.01);
+}
+
+@media screen and (max-width: 780px) {
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    line-height: 1.5;
+  }
+  .c {
+    order: 1;
+  }
+  .s {
+    order: 4;
+  }
+  .e {
+    order: 7;
+  }
+  .climb-slideshow {
+    order: 2;
+  }
+  #climb-p {
+    order: 3;
+  }
+  .ski-slideshow {
+    order: 5;
+  }
+  #ski-p {
+    order: 6;
+  }
+  .expedition-slideshow {
+    order: 8;
+  }
+  .exp-p {
+    order: 9;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .name h1 {
+    font-size: 200%;
+  }
+  .name h2 {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    max-width: 15%;
+  }
+  .lead {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo2 {
+    display: none;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+  .short-bio {
+    padding-bottom: 5%;
+  }
+  .intro {
+    padding-bottom: 2rem;
+  }
+  .products-container {
+    margin-top: 0%;
+  }
+  #copyright,
+  #contact-btn {
+    font-size: 0.5rem;
+  }
+  .footer {
+    max-height: 3rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .name h1 {
+    font-size: 120%;
+  }
+  .name h2 {
+    font-size: 80%;
+  }
+  #contact-btn {
+    font-size: 0.4rem;
+  }
 }
