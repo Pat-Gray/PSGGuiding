@@ -1,4 +1,4 @@
-@media only screen and (max-width: 576x) {
+@media only screen and (max-width: 576px) {
   header {
     display: flex;
   }

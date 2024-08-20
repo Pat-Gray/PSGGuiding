@@ -68,6 +68,4 @@ function displayImages2() {
   setTimeout(displayImages2, 5000);
 }
 
-// fqa javacript
-import "tiny-slider/dist/tiny-slider.css";
-import "tiny-slider";
+// FQA

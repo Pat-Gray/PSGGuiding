@@ -11,10 +11,12 @@
     />
     <!-- slider link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+<!-- Icon link -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="/PSGGuiding/CSS/styles.css" />
-    <link rel="stylesheet" href="/PSGGuiding/CSS/contact.css" />
-    <title>Contact PSG Guiding</title>
+    <link rel="stylesheet" href="/PSGGuiding/CSS/faq.css" />
+    <link rel="stylesheet" href="/PSGGuiding/CSS/styles.css">
+    <title>FAQ PSG Guiding</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -80,7 +82,74 @@
       });
     });
   </script>
-    <!-- or ul.my-slider > li -->
+  
+  <article>
+<h1>Frequently Asked Questions</h1>
+
+<div class="fqa">
+<div class="question-title">
+  <p class="question">Do you only work in New Zealand?</p>
+  </div>
+<div class="btn-toggle">
+  <button type="button" class="open button"><span class="material-symbols-outlined">
+    add_circle
+    </span></button>
+  <button type="button" class="close button"><span class="material-symbols-outlined">
+    cancel
+    </span></button>
+  </div>
+  
+
+<div>
+  <p class="question-text">Reprehenderit eiusmod culpa culpa duis ut duis in ipsum occaecat veniam Lorem deserunt ullamco cillum. Incididunt quis ullamco incididunt consectetur deserunt consectetur consequat sit pariatur velit. Culpa culpa exercitation nostrud est et sunt labore voluptate adipisicing enim. Dolore anim veniam excepteur id in cupidatat minim. Deserunt labore culpa nostrud esse eu.</p>
+</div>
+</div>
+
+<div class="fqa">
+<div class="question-title">
+  <p class="question">How much do you charge</p>
+  </div>
+<div class="btn-toggle">
+  <button type="button" class="open button"><span class="material-symbols-outlined">
+    add_circle
+    </span></button>
+  <button type="button" class="close button"><span class="material-symbols-outlined">
+    cancel
+    </span></button>
+  </div>
+  
+
+<div>
+  <p class="question-text">If you have to ask you can't afford.</p>
+</div>
+</div>
+
+
+<script>
+  const openBtns = document.querySelectorAll(".open");
+const closeBtns = document.querySelectorAll(".close");
+const questionTexts = document.querySelectorAll(".question-text");
+
+for (let i = 0; i < questionTexts.length; i++) {
+  const openBtn = openBtns[i];
+  const closeBtn = closeBtns[i];
+  const paragraph = questionTexts[i];
+
+  openBtn.addEventListener("click", function () {
+    paragraph.style.display = "block";
+    openBtn.style.display = "none";
+    closeBtn.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", function () {
+    paragraph.style.display = "none";
+    openBtn.style.display = "block";
+    closeBtn.style.display = "none";
+  });
+}
+</script>
+
+  </article>
 
     <footer>
       <div class="footer-container">
@@ -91,8 +160,8 @@
      
     </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
     <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
-    <script src="/PSGGuiding/script.js" defer></script>
+    <script src="/PSGGuiding/script.js"></script>
   </body>
 </html>
