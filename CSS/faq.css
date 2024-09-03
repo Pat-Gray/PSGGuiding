@@ -20,6 +20,7 @@ h1 {
 button {
   background-color: #0f4c75;
   color: #bbe1fa;
+  display: none;
 }
 
 .btn-toggle {

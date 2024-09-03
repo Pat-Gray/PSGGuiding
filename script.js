@@ -68,4 +68,9 @@ function displayImages2() {
   setTimeout(displayImages2, 5000);
 }
 
-// FQA
+// SCROLL REVEAL
+ScrollReveal().reveal('.carouselExampleIndicators')
+ScrollReveal().reveal('.intro')
+ScrollReveal().reveal('.products-container')
+ScrollReveal().reveal('.testimonial')
+ScrollReveal().reveal('.footer-container')
