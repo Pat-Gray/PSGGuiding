@@ -71,6 +71,8 @@ function displayImages2() {
 // SCROLL REVEAL
 ScrollReveal().reveal('.carouselExampleIndicators')
 ScrollReveal().reveal('.intro')
+ScrollReveal().reveal('.products')
+
 ScrollReveal().reveal('.products-container')
 ScrollReveal().reveal('.testimonial')
 ScrollReveal().reveal('.footer-container')
