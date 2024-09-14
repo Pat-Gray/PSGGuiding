@@ -27,6 +27,14 @@ button {
   grid-column: 2/3;
 }
 
+#contact-btn {
+  display: block;
+}
+
+a{
+  text-decoration: none;
+}
+
 .open {
   display: block;
   border: none;
@@ -48,6 +56,10 @@ button {
   line-height: 2;
 }
 
+span {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 700px) {
   h1{
     font-size: 1.5rem;
@@ -59,3 +71,4 @@ button {
     font-size: 0.8rem;
     line-height: 1.7;
   }
+}

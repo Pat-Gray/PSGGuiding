@@ -10,6 +10,17 @@ Primary: #0F4C75#3282B8, #BBE1FA, #1B262C */
 }
 
 body {
+  opacity: .5;
+  animation: fadeIn 1s forwards ease-in-out;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+body {
   font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
@@ -55,6 +66,7 @@ header {
 
 .side-bar-icon {
   color: #bbe1fa;
+  cursor: pointer;
 }
 
 .sideNav {
@@ -241,45 +253,6 @@ ul {
   
 }
 
-@media screen and (max-width: 780px) {
-  .products-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10%;
-    line-height: 1.5;
-  }
-  .c {
-    order: 1;
-  }
-  .s {
-    order: 4;
-  }
-  .e {
-    order: 7;
-  }
-  .climb-slideshow {
-    order: 2;
-  }
-  #climb-p {
-    order: 3;
-  }
-  .ski-slideshow {
-    order: 5;
-  }
-  #ski-p {
-    order: 6;
-  }
-  .expedition-slideshow {
-    order: 8;
-  }
-  .exp-p {
-    order: 9;
-  }
-  h3 {
-    text-align: center;
-  }
-  
-}
 
 
 @media screen and (max-width: 700px) {

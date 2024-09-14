@@ -15,26 +15,26 @@ body {
 }
 
 .container {
-  --bg-color: radial-gradient(
+  /* --bg-color: radial-gradient(
   	circle at 50% 0%,
   	rgba(50, 50, 50, 1) 0%,
   	rgba(12, 12, 12, 1) 100%
-  );
-  overflow: clip;
+  ); */
+  /* overflow: clip; */
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   
   width: 100%;
-  height: 60dvh;
+  height: 65dvh;
  
 }
 
 .category_container {
   --gap: 0.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: nowrap;
   gap: calc(var(--gap) * 2);
@@ -73,7 +73,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: var(--dark);
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .content img {
@@ -149,7 +149,7 @@ body {
 
 .content:hover .profile_quote {
   transform: none;
-  opacity: 1;
+  opacity: 1; 
 }
 
 dialog {
@@ -166,3 +166,40 @@ dialog a {
   color: whitesmoke;
 }
 
+a {
+  text-decoration: none;
+}
+@media screen and (max-width: 770px) {
+.container {
+  height: auto;
+}
+
+  .category_container {
+    height: auto;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    gap: 1.5rem; /* Increase gap between elements */
+    
+  }
+
+  .content {
+    width: 90%; /* Adjust width to ensure elements are centered and not too wide */
+    height: 50vh;
+    flex-shrink: 0;
+    transition: none; /* Disable the width transition for column layout */
+    margin: 0 auto; /* Ensure the content is centered horizontally */
+  }
+
+  .content:hover {
+    width: 90%; /* Maintain same width on hover */
+  }
+
+  .profile_detail {
+    width: 100%; /* Adjust width to fit the new container size */
+  }
+
+  .profile_quote {
+    width: 100%; /* Ensure profile quote fits the new layout */
+  }
+}
