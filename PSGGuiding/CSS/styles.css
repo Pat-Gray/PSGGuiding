@@ -188,6 +188,11 @@ ul {
 .swiper-slide {
   background-color: #0f4c75;
 }
+
+i, h4{
+font-size: 16px;
+
+}
 /* FOOTER */
 .footer-container {
   display: flex;
